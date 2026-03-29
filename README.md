@@ -38,7 +38,8 @@ pip install "rembg[cpu,cli]"
 ```bash
 git clone https://github.com/vandaleep/rembg-gimp.git
 cd rembg-gimp
-ln -s $(pwd)/rembg-gimp.py ~/.config/GIMP/3.0/plug-ins/rembg-gimp.py
+mkdir ~/.config/GIMP/3.0/plug-ins/rembg-gimp
+cp rembg-gimp.py ~/.config/GIMP/3.0/plug-ins/rembg-gimp/rembg-gimp.py
 ```
 
 **Option B: Manual installation**
@@ -47,6 +48,8 @@ ln -s $(pwd)/rembg-gimp.py ~/.config/GIMP/3.0/plug-ins/rembg-gimp.py
    - **Linux:** `~/.config/GIMP/3.0/plug-ins/`
    - **macOS:** `~/Library/Application Support/GIMP/3.0/plug-ins/`
    - **Windows:** `%APPDATA%\GIMP\3.0\plug-ins\`
+
+*Create subfolder rembg-gimp in plug-ins directory*
 
 ### 3. Verify rembg Path (Important!)
 
